@@ -1,0 +1,2628 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/basithalim/ontologies/2020/1/untitled-ontology-7"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/basithalim/ontologies/2020/1/untitled-ontology-7">
+    <Prefix name="" IRI="http://www.semanticweb.org/basithalim/ontologies/2020/1/untitled-ontology-7#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Declaration>
+        <Class IRI="#Age"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Myocardial_Infarction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptoms"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#active"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#arrythmia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bradycardia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cancer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#diabetes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#female"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#heartdisease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#latent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#male"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mobile_no"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#patient_id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#patient_info"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tubercolosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#type1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#type2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#weight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSymptom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hashabitof"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isnotsufferingfrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#issufferingfrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#leadsto"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#needtest"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFastingBloodSugar"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasgender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasmobileno"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#haspatientid"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasweight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#12345"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AIDS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Active_TB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Angina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Angiogram"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arrythemia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asifur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BCG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Basit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Blood_Urine_test"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bloody_stool_urine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Body_pain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bradycardia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Breast_redness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CT_SCAN"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cancer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Change_in_bowel_movement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cough"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Decreasedsextime"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diabetes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ECG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EKG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Easy_bruising"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Electrolyte_imbalance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ElectrophysiologicalTesting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Endometrial_Cancer_Detection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#False_negative"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#False_positive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HeartCatheriazation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HolterMoniter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hunger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hypertension"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hypothyroidism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Imaging_test"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Inward_nipple"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Latent_TB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lightheadedness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Liver_enlargement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MRI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mammograms"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mole_with_changing_features"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Myocardial_Infarction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nipple_discharge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PDP_negative"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PDP_positive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PDP_test"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pale_complexion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Palpitation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Persistent_cough"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Poor_muscle_strength"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pressure_in_chest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prolonged_sore_throat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Radiology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Razia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shortness_of_breadth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Skin_damage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Skin_dimpling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spleen_enlargement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stress_test"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sudden_weakness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Swollen_lymph_nodes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Syncope"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trouble_concentrating"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Type1_DIabetes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Type2_DIabetes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UTI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Upper_back_pain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Uterine_test"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#acute_myocardial_infarction"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#age"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ageGreater"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#anxiety"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#blood_test_positive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bloodcough"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#breathing_pain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#breathlesness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#change_in_urination"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chestpain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dizziness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fatigue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fever"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#frequentthirst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#frequenturination"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#h_bloodsugar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#heridetary_type1_diabetes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#high_cholestrol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#high_triglycerile"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#imaging_test_positive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#increasedhunger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#increasedthirst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inherited_gene_defect"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jaw_pain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#m_bloodsugar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#male"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nausea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nightsweat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nonhealingwounds"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#prediabetes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pressurised_tight_test"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#recurringupperbodypain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#smoking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sputum_negative"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sputum_positive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sweating"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#type1_risk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vomiting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#weightloss"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Age"/>
+        <Class IRI="#patient_info"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Myocardial_Infarction"/>
+        <Class IRI="#heartdisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#active"/>
+        <Class IRI="#tubercolosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#arrythmia"/>
+        <Class IRI="#heartdisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bradycardia"/>
+        <Class IRI="#heartdisease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cancer"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#diabetes"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#female"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gender"/>
+        <Class IRI="#patient_info"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#heartdisease"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#latent"/>
+        <Class IRI="#tubercolosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#male"/>
+        <Class IRI="#Symptoms"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobile_no"/>
+        <Class IRI="#patient_info"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#patient_id"/>
+        <Class IRI="#patient_info"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#patient_info"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tubercolosis"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#type1"/>
+        <Class IRI="#diabetes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#type2"/>
+        <Class IRI="#diabetes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#weight"/>
+        <Class IRI="#patient_info"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#active"/>
+        <Class IRI="#latent"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#patient_id"/>
+        <NamedIndividual IRI="#12345"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#AIDS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#AIDS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#tubercolosis"/>
+        <NamedIndividual IRI="#AIDS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active"/>
+        <NamedIndividual IRI="#Active_TB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Active_TB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Active_TB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#arrythmia"/>
+        <NamedIndividual IRI="#Arrythemia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Arrythemia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Arrythemia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#patient_info"/>
+        <NamedIndividual IRI="#Asifur"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#diabetes"/>
+        <NamedIndividual IRI="#BCG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#BCG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#BCG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#patient_info"/>
+        <NamedIndividual IRI="#Basit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cancer"/>
+        <NamedIndividual IRI="#Bloody_stool_urine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Bloody_stool_urine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Bloody_stool_urine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cancer"/>
+        <NamedIndividual IRI="#Body_pain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Body_pain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Body_pain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#bradycardia"/>
+        <NamedIndividual IRI="#Bradycardia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cancer"/>
+        <NamedIndividual IRI="#Cancer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Cancer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Cancer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cancer"/>
+        <NamedIndividual IRI="#Change_in_bowel_movement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Change_in_bowel_movement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Change_in_bowel_movement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#heartdisease"/>
+        <NamedIndividual IRI="#Cough"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Cough"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#diabetes"/>
+        <NamedIndividual IRI="#Decreasedsextime"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Decreasedsextime"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Decreasedsextime"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type1"/>
+        <NamedIndividual IRI="#Decreasedsextime"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type2"/>
+        <NamedIndividual IRI="#Decreasedsextime"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#diabetes"/>
+        <NamedIndividual IRI="#Diabetes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Diabetes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Diabetes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cancer"/>
+        <NamedIndividual IRI="#Easy_bruising"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Easy_bruising"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Easy_bruising"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#False_negative"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#False_negative"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#tubercolosis"/>
+        <NamedIndividual IRI="#False_negative"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#False_positive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#False_positive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#tubercolosis"/>
+        <NamedIndividual IRI="#False_positive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#diabetes"/>
+        <NamedIndividual IRI="#Hunger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type1"/>
+        <NamedIndividual IRI="#Hunger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type2"/>
+        <NamedIndividual IRI="#Hunger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Imaging_test"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Imaging_test"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#tubercolosis"/>
+        <NamedIndividual IRI="#Imaging_test"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Myocardial_Infarction"/>
+        <NamedIndividual IRI="#Lightheadedness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#bradycardia"/>
+        <NamedIndividual IRI="#Lightheadedness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Lightheadedness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#heartdisease"/>
+        <NamedIndividual IRI="#Lightheadedness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cancer"/>
+        <NamedIndividual IRI="#Liver_enlargement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Liver_enlargement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Liver_enlargement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cancer"/>
+        <NamedIndividual IRI="#Mole_with_changing_features"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Mole_with_changing_features"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Mole_with_changing_features"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#PDP_test"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#latent"/>
+        <NamedIndividual IRI="#PDP_test"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#PDP_test"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cancer"/>
+        <NamedIndividual IRI="#Pale_complexion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Pale_complexion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Pale_complexion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Myocardial_Infarction"/>
+        <NamedIndividual IRI="#Palpitation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#arrythmia"/>
+        <NamedIndividual IRI="#Palpitation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#bradycardia"/>
+        <NamedIndividual IRI="#Palpitation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Palpitation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Palpitation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cancer"/>
+        <NamedIndividual IRI="#Persistent_cough"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Persistent_cough"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Persistent_cough"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#diabetes"/>
+        <NamedIndividual IRI="#Poor_muscle_strength"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type1"/>
+        <NamedIndividual IRI="#Poor_muscle_strength"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type2"/>
+        <NamedIndividual IRI="#Poor_muscle_strength"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Myocardial_Infarction"/>
+        <NamedIndividual IRI="#Pressure_in_chest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Pressure_in_chest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Pressure_in_chest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cancer"/>
+        <NamedIndividual IRI="#Prolonged_sore_throat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Prolonged_sore_throat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Prolonged_sore_throat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#bradycardia"/>
+        <NamedIndividual IRI="#Shortness_of_breadth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Shortness_of_breadth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#heartdisease"/>
+        <NamedIndividual IRI="#Shortness_of_breadth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Shortness_of_breadth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cancer"/>
+        <NamedIndividual IRI="#Skin_damage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Skin_damage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Skin_damage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cancer"/>
+        <NamedIndividual IRI="#Spleen_enlargement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#Spleen_enlargement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#Spleen_enlargement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Myocardial_Infarction"/>
+        <NamedIndividual IRI="#Sudden_weakness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cancer"/>
+        <NamedIndividual IRI="#Swollen_lymph_nodes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#heartdisease"/>
+        <NamedIndividual IRI="#Upper_back_pain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#age"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#age"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type1"/>
+        <NamedIndividual IRI="#age"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#ageGreater"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#ageGreater"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type2"/>
+        <NamedIndividual IRI="#ageGreater"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#heartdisease"/>
+        <NamedIndividual IRI="#anxiety"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#anxiety"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active"/>
+        <NamedIndividual IRI="#blood_test_positive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#blood_test_positive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#blood_test_positive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active"/>
+        <NamedIndividual IRI="#bloodcough"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cancer"/>
+        <NamedIndividual IRI="#bloodcough"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#bloodcough"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#bloodcough"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#breathing_pain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#breathing_pain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#tubercolosis"/>
+        <NamedIndividual IRI="#breathing_pain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Myocardial_Infarction"/>
+        <NamedIndividual IRI="#breathlesness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#arrythmia"/>
+        <NamedIndividual IRI="#breathlesness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#bradycardia"/>
+        <NamedIndividual IRI="#breathlesness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#breathlesness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#heartdisease"/>
+        <NamedIndividual IRI="#breathlesness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#breathlesness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cancer"/>
+        <NamedIndividual IRI="#change_in_urination"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#change_in_urination"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#change_in_urination"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active"/>
+        <NamedIndividual IRI="#chestpain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#chestpain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#chestpain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Myocardial_Infarction"/>
+        <NamedIndividual IRI="#dizziness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#arrythmia"/>
+        <NamedIndividual IRI="#dizziness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#bradycardia"/>
+        <NamedIndividual IRI="#dizziness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#dizziness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#heartdisease"/>
+        <NamedIndividual IRI="#dizziness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#dizziness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active"/>
+        <NamedIndividual IRI="#fatigue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cancer"/>
+        <NamedIndividual IRI="#fatigue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#fatigue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#fatigue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type1"/>
+        <NamedIndividual IRI="#fatigue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type2"/>
+        <NamedIndividual IRI="#fatigue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active"/>
+        <NamedIndividual IRI="#fever"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#fever"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#fever"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#frequentthirst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#frequentthirst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type1"/>
+        <NamedIndividual IRI="#frequentthirst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type2"/>
+        <NamedIndividual IRI="#frequentthirst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#frequenturination"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#frequenturination"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type1"/>
+        <NamedIndividual IRI="#frequenturination"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type2"/>
+        <NamedIndividual IRI="#frequenturination"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#diabetes"/>
+        <NamedIndividual IRI="#h_bloodsugar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#h_bloodsugar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#h_bloodsugar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cancer"/>
+        <NamedIndividual IRI="#heridetary_type1_diabetes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#diabetes"/>
+        <NamedIndividual IRI="#heridetary_type1_diabetes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#heridetary_type1_diabetes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#heartdisease"/>
+        <NamedIndividual IRI="#heridetary_type1_diabetes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#heridetary_type1_diabetes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type1"/>
+        <NamedIndividual IRI="#heridetary_type1_diabetes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type2"/>
+        <NamedIndividual IRI="#heridetary_type1_diabetes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#increasedhunger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#increasedhunger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type1"/>
+        <NamedIndividual IRI="#increasedhunger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type2"/>
+        <NamedIndividual IRI="#increasedhunger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#increasedthirst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#increasedthirst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type1"/>
+        <NamedIndividual IRI="#increasedthirst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type2"/>
+        <NamedIndividual IRI="#increasedthirst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#jaw_pain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#heartdisease"/>
+        <NamedIndividual IRI="#jaw_pain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#diabetes"/>
+        <NamedIndividual IRI="#m_bloodsugar"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#gender"/>
+        <NamedIndividual IRI="#male"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#bradycardia"/>
+        <NamedIndividual IRI="#nausea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#nausea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#heartdisease"/>
+        <NamedIndividual IRI="#nausea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#nausea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#active"/>
+        <NamedIndividual IRI="#nightsweat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#nightsweat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#nightsweat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cancer"/>
+        <NamedIndividual IRI="#nonhealingwounds"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#nonhealingwounds"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#nonhealingwounds"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type1"/>
+        <NamedIndividual IRI="#nonhealingwounds"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type2"/>
+        <NamedIndividual IRI="#nonhealingwounds"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#bradycardia"/>
+        <NamedIndividual IRI="#sweating"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#heartdisease"/>
+        <NamedIndividual IRI="#sweating"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#sweating"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#female"/>
+        <NamedIndividual IRI="#vomiting"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#heartdisease"/>
+        <NamedIndividual IRI="#vomiting"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#male"/>
+        <NamedIndividual IRI="#vomiting"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#cancer"/>
+        <NamedIndividual IRI="#weightloss"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type1"/>
+        <NamedIndividual IRI="#weightloss"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#type2"/>
+        <NamedIndividual IRI="#weightloss"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#12345"/>
+        <NamedIndividual IRI="#age"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#12345"/>
+        <NamedIndividual IRI="#Decreasedsextime"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#12345"/>
+        <NamedIndividual IRI="#Poor_muscle_strength"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#12345"/>
+        <NamedIndividual IRI="#Hunger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#12345"/>
+        <NamedIndividual IRI="#h_bloodsugar"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Asifur"/>
+        <NamedIndividual IRI="#anxiety"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Asifur"/>
+        <NamedIndividual IRI="#Electrolyte_imbalance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Asifur"/>
+        <NamedIndividual IRI="#Hypertension"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Asifur"/>
+        <NamedIndividual IRI="#Poor_muscle_strength"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Asifur"/>
+        <NamedIndividual IRI="#Hunger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Asifur"/>
+        <NamedIndividual IRI="#vomiting"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Asifur"/>
+        <NamedIndividual IRI="#Decreasedsextime"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Asifur"/>
+        <NamedIndividual IRI="#ageGreater"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Asifur"/>
+        <NamedIndividual IRI="#Shortness_of_breadth"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Asifur"/>
+        <NamedIndividual IRI="#chestpain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Asifur"/>
+        <NamedIndividual IRI="#inherited_gene_defect"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Asifur"/>
+        <NamedIndividual IRI="#Hypothyroidism"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Asifur"/>
+        <NamedIndividual IRI="#nausea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#issufferingfrom"/>
+        <NamedIndividual IRI="#Asifur"/>
+        <NamedIndividual IRI="#Bradycardia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Basit"/>
+        <NamedIndividual IRI="#weightloss"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Basit"/>
+        <NamedIndividual IRI="#PDP_negative"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Basit"/>
+        <NamedIndividual IRI="#blood_test_positive"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Basit"/>
+        <NamedIndividual IRI="#breathing_pain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Basit"/>
+        <NamedIndividual IRI="#sputum_positive"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Basit"/>
+        <NamedIndividual IRI="#imaging_test_positive"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Basit"/>
+        <NamedIndividual IRI="#Persistent_cough"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Basit"/>
+        <NamedIndividual IRI="#bloodcough"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Bradycardia"/>
+        <NamedIndividual IRI="#Palpitation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Bradycardia"/>
+        <NamedIndividual IRI="#nausea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Bradycardia"/>
+        <NamedIndividual IRI="#Shortness_of_breadth"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Bradycardia"/>
+        <NamedIndividual IRI="#chestpain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Bradycardia"/>
+        <NamedIndividual IRI="#Lightheadedness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Bradycardia"/>
+        <NamedIndividual IRI="#sweating"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Bradycardia"/>
+        <NamedIndividual IRI="#dizziness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Bradycardia"/>
+        <NamedIndividual IRI="#breathlesness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Razia"/>
+        <NamedIndividual IRI="#Inward_nipple"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Razia"/>
+        <NamedIndividual IRI="#Breast_redness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Razia"/>
+        <NamedIndividual IRI="#Nipple_discharge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Razia"/>
+        <NamedIndividual IRI="#Skin_dimpling"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#12345"/>
+        <Literal datatypeIRI="&xsd;integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasFastingBloodSugar"/>
+        <NamedIndividual IRI="#12345"/>
+        <Literal datatypeIRI="&xsd;integer">135</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasgender"/>
+        <NamedIndividual IRI="#12345"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haspatientid"/>
+        <NamedIndividual IRI="#12345"/>
+        <Literal datatypeIRI="&xsd;integer">12345</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAge"/>
+        <NamedIndividual IRI="#Asifur"/>
+        <Literal datatypeIRI="&xsd;integer">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasgender"/>
+        <NamedIndividual IRI="#Asifur"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasgender"/>
+        <NamedIndividual IRI="#Basit"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#haspatientid"/>
+        <NamedIndividual IRI="#Basit"/>
+        <Literal datatypeIRI="&xsd;integer">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasgender"/>
+        <NamedIndividual IRI="#Cough"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasgender"/>
+        <NamedIndividual IRI="#Lightheadedness"/>
+        <Literal datatypeIRI="&xsd;string">female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasgender"/>
+        <NamedIndividual IRI="#Razia"/>
+        <Literal datatypeIRI="&xsd;string">female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasgender"/>
+        <NamedIndividual IRI="#Upper_back_pain"/>
+        <Literal datatypeIRI="&xsd;string">female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasgender"/>
+        <NamedIndividual IRI="#jaw_pain"/>
+        <Literal datatypeIRI="&xsd;string">female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasgender"/>
+        <NamedIndividual IRI="#male"/>
+        <Literal datatypeIRI="&xsd;string">male</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <Class IRI="#cancer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <Class IRI="#diabetes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <Class IRI="#heartdisease"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <Class IRI="#patient_id"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <Class IRI="#tubercolosis"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#issufferingfrom"/>
+        <Class IRI="#patient_id"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#leadsto"/>
+        <Class IRI="#Symptoms"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <Class IRI="#female"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <Class IRI="#male"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#issufferingfrom"/>
+        <Class IRI="#cancer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#issufferingfrom"/>
+        <Class IRI="#diabetes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#issufferingfrom"/>
+        <Class IRI="#heartdisease"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#issufferingfrom"/>
+        <Class IRI="#tubercolosis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#leadsto"/>
+        <Class IRI="#Disease"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#haspatientid"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAge"/>
+        <Class IRI="#Age"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasgender"/>
+        <Class IRI="#gender"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasmobileno"/>
+        <Class IRI="#mobile_no"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#haspatientid"/>
+        <Class IRI="#patient_id"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasweight"/>
+        <Class IRI="#weight"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAge"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasgender"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasmobileno"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#haspatientid"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasweight"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Angina"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Lightheadedness"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Palpitation"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Syncope"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Trouble_concentrating"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Bradycardia"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#BCG"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#PDP_positive"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#leadsto"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#False_positive"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Breast_redness"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Inward_nipple"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Nipple_discharge"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Skin_dimpling"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasgender"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">female</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Cancer"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Change_in_bowel_movement"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Easy_bruising"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Mole_with_changing_features"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Pale_complexion"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#change_in_urination"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#fatigue"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasgender"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">female</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Cancer"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Change_in_bowel_movement"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Easy_bruising"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Mole_with_changing_features"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Pale_complexion"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#change_in_urination"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#fatigue"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasgender"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">male</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Cancer"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Decreasedsextime"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Hunger"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Poor_muscle_strength"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasgender"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">male</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Diabetes"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Electrolyte_imbalance"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Hypertension"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Hypothyroidism"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#ageGreater"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#inherited_gene_defect"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Type2_DIabetes"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Arrythemia"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Hunger"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#UTI"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#frequenturination"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasgender"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">female</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Diabetes"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#PDP_negative"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#blood_test_positive"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#imaging_test_positive"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#sputum_positive"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Active_TB"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#PDP_negative"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#AIDS"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#leadsto"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#False_negative"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#PDP_positive"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#blood_test_positive"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#sputum_negative"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Latent_TB"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Persistent_cough"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#bloodcough"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#breathing_pain"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#weightloss"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#TB"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Shortness_of_breadth"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#anxiety"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#chestpain"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#nausea"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#vomiting"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasgender"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">male</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Myocardial_Infarction"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Shortness_of_breadth"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#jaw_pain"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#nausea"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#vomiting"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Myocardial_Infarction"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#age"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Diabetes"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Type1_DIabetes"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#ageGreater"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Diabetes"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Type2_DIabetes"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#h_bloodsugar"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Diabetes"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#heridetary_type1_diabetes"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#leadsto"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#type1_risk"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasSymptom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#m_bloodsugar"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#leadsto"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#prediabetes"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hashabitof"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#smoking"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Diabetes"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#h_bloodsugar"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#high_cholestrol"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#high_triglycerile"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#acute_myocardial_infarction"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Active_TB"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isnotsufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Latent_TB"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Arrythemia"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Bradycardia"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#needtest"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Blood_Urine_test"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#needtest"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#ECG"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#needtest"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#EKG"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#needtest"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#ElectrophysiologicalTesting"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#needtest"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#HeartCatheriazation"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#needtest"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#HolterMoniter"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Cancer"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasgender"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">female</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#needtest"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#CT_SCAN"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#needtest"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Endometrial_Cancer_Detection"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#needtest"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#MRI"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#needtest"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Mammograms"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#needtest"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Radiology"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#needtest"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Uterine_test"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Cancer"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasgender"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Literal datatypeIRI="&rdf;PlainLiteral">male</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#needtest"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#CT_SCAN"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#needtest"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#MRI"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#needtest"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Radiology"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Latent_TB"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isnotsufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Active_TB"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Latent_TB"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#needtest"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Imaging_test"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Myocardial_Infarction"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#acute_myocardial_infarction"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#needtest"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Angiogram"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#needtest"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#ECG"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#needtest"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Stress_test"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Type1_DIabetes"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isnotsufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Type2_DIabetes"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#patient_id"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#issufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Type2_DIabetes"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isnotsufferingfrom"/>
+                <Variable IRI="urn:swrl#p"/>
+                <NamedIndividual IRI="#Type1_DIabetes"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnonymousIndividual nodeID="_:genid1"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">1</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
